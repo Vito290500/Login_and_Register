@@ -1,0 +1,27 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Successfull Registration</title>
+    <link rel="stylesheet" href="{% static 'includes/checkemail.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+</head>
+<body>
+    
+    <div class="Background">
+    </div>
+    <div class="Body">
+        <h1>Reset Password</h1>
+        <h3>Email sent!</h3>
+        <p>Please, check your emailbox for reset!</p>
+        <button class="image"></button>
+        <div class="back">
+            <a href="{% url 'main-page' %}" class="Back">Back to login</a>
+        </div>
+    </div>
+
+</body>
+</html>

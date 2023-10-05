@@ -1,0 +1,105 @@
+body, html {
+    height: 100%;
+    background-color: black;
+}
+.Background{
+    width: 100%;
+    height: 100%;
+    background-image: url('https://img.freepik.com/photos-premium/scene-foret-fantastique-foret-rougeoyante-lumiere-bleue-foret-lucioles-dans-ciel_737376-1487.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+}
+.Body{
+    color: rgb(216, 255, 254);
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 550px;
+    height: 600px;
+    text-align: center;   
+    background: rgb(26, 26, 26);
+    background: hsl(0 0% 0% / 0.5);
+    backdrop-filter: blur(1rem);
+    border-radius: 20px;
+}
+.Body h1{
+    margin-top: 4rem;
+    font-size: 30px;
+}
+.Body h3{
+    margin-top: 4rem;
+    font-size: 20px;
+    color: white;
+}
+.Body p{
+    font-size: 20px;
+    color: white;
+}
+.Back{
+    text-decoration: none;
+    background: hsl(0 0% 0% / 0.0);
+    border: none;
+    position: relative;
+    top: 3rem;
+    font-size: 25px;
+    color: rgb(216, 255, 254);
+    width: 40%;
+    transition: 1s;
+}
+.back:hover{
+    cursor: pointer;
+    color: white;
+    font-size: 30px;
+}
+.back{
+    height: 40%;
+    align-items: center;
+}
+.image{
+    width: 150px;
+    height: 150px;
+    background-image: url(icone/Exclamation.svg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: transparent;
+    border-radius: 40px;
+    border-width: 0;
+    margin-top: 4rem;
+}
+
+@media (max-width: 600px) {
+    .Body{
+        width: 300px;
+        height: 500px;
+    }
+    .Body h1{
+        font-size: 25px;
+        margin-top: 0rem;
+    }
+    .Body h3{
+        margin-top: 3rem;
+        font-size: 20px;
+    }
+    .Body p{
+        font-size: 20px;
+        width: 80%;
+        margin-left: 10%;
+        margin-bottom: -0.5rem
+    }
+    .image{
+        margin-bottom: 1rem;
+        width: 100px;
+        height: 100px;
+    }
+    .Back{
+        font-size: 20px;
+    }
+}
+
+

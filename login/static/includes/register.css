@@ -1,0 +1,221 @@
+body, html {
+    height: 100%;
+    background-color: black;
+}
+.Background{
+    width: 100%;
+    height: 100%;
+    background-image: url('https://img.freepik.com/photos-premium/scene-foret-fantastique-foret-rougeoyante-lumiere-bleue-foret-lucioles-dans-ciel_737376-1487.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+}
+.Body{
+    color: rgb(216, 255, 254);
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 550px;
+    height: 850px;
+    text-align: center;   
+    background: rgb(26, 26, 26);
+    background: hsl(0 0% 0% / 0.5);
+    backdrop-filter: blur(1rem);
+    border-radius: 20px;
+}
+.Body h1{
+    margin-top: 4rem;
+}
+.Body form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+.Body form input{
+    margin-top: 1rem;
+    height: 40px;
+    font-size: 25px;
+    color: azure;
+    background: hsl(0 0% 0% / 0.0);
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    text-align: center;
+}
+.Body form input:focus{
+    outline: 0px solid orange;
+    border-color: rgb(216, 255, 254);
+}
+.username{
+    position: relative;
+    left: 20%;
+    width: 60%;
+}
+.container{
+    display: flex;
+    margin-top: 1rem;
+}
+.container2{
+    display: flex;
+    margin-top: 1rem;
+}
+.password{
+    width: 100%;
+    margin-left: 13%;
+}
+.password input{
+    width: 80%;
+}
+.eye{
+    height: 20px;
+    margin-top: 2rem;
+    margin-right: 3.2rem;
+    transform: translate(-400%, -20%);
+}
+.Body form{
+    height: 100%;
+}
+.container_button{
+    height: 40%;
+    margin-top: 10rem;
+}
+.container_button button{
+    font-size: 25px;
+    color: white;
+}
+.Register{
+    margin-top: 3rem;
+    font-size: 25px;
+    color: black;
+    background-color: rgb(216, 255, 254);
+    border-radius: 20px;
+    border-width: 0;
+    width: 60%;
+    margin-left: 20%;
+    height: 40px;
+}
+.Register:hover{
+    cursor: pointer;
+    background-color: rgb(0, 161, 156);
+}
+.or{
+    font-size: 25px;
+}
+.gmail,
+.facebook,
+.instagram{
+    width: 50px;
+    height: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 40px;
+    border-width: 0;
+}
+.gmail{
+    background-image: url(icone/gmail.svg);
+}
+.facebook{
+    background-image: url(icone/facebook.svg);  
+}
+.instagram{
+    background-image: url(icone/instagram.svg);
+}
+.gmail:hover,
+.instagram:hover,
+.facebook:hover{
+    transform: scale(1.1);
+}
+.button_icon button:hover{
+    cursor: pointer;
+}
+.Back_to_Login{
+    text-align: center;
+    text-decoration: none;
+    background: hsl(0 0% 0% / 0.0);
+    border: none;
+    margin-top: 2rem;
+    margin-left: 10.5rem;
+    font-size: 20px;
+    color: rgb(216, 255, 254);
+    width: 40%;
+    margin-top: 3rem;
+}
+.Back_to_Login:hover{
+    cursor: pointer;
+    color: white;
+    font-size: 25px;
+}
+.Name_user{
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.Name_user input{
+    width: 28%;
+    margin-right: 1rem;
+}
+.Confirmpassword{
+    width: 100%;
+    margin-left: 13%;
+}
+form .error{
+    color: rgb(148, 22, 22);
+    font-size: 15px;
+    border-color: rgb(148, 22, 22) ;
+}
+
+
+
+@media (max-width: 600px) {
+    .Body{
+        width: 300px;
+        height: 600px;
+    }
+    .Body header h1{
+        font-size: 20px;
+        margin-top: 2.5rem;
+    }
+    .Body form{
+        margin-top: 0rem;
+
+    }
+    .Body form input{
+        font-size: 15px;
+        margin-bottom: -0.5rem;
+    }
+    .eye{
+        margin-right: 0rem;
+        margin-left: 1rem;
+    }
+    .or{
+        font-size: 15px;
+        margin-top: -0.5rem;
+    }
+    .button_icon button {
+        height: 40px;
+        width: 40px;
+    }
+    .Register{
+        font-size: 20px;
+        width: 140px;
+        height: 30px;
+        margin-left: 5rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    .Back_to_Login{
+        margin-left: 0rem;
+        width: 200px;
+        margin-top: 1rem;
+        margin-left: 3.3rem;
+        font-size: 15px;
+    }
+    .Back_to_Login:hover{
+        font-size: 20px;
+    }
+}

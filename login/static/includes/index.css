@@ -1,0 +1,256 @@
+body, html {
+    height: 100%;
+    background-color: black;
+}
+.Background{
+    width: 100%;
+    height: 100%;
+    background-image: url('https://img.freepik.com/photos-premium/scene-foret-fantastique-foret-rougeoyante-lumiere-bleue-foret-lucioles-dans-ciel_737376-1487.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+}
+.Body{
+    color: rgb(216, 255, 254);
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 550px;
+    height: 800px;
+    text-align: center;   
+    background: rgb(26, 26, 26);
+    background: hsl(0 0% 0% / 0.5);
+    backdrop-filter: blur(1rem);
+    border-radius: 20px;
+}
+.Body h1{
+    margin-top: 4rem;
+}
+.Body form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 8rem;
+}
+.Body form input{
+    margin-top: 1rem;
+    height: 40px;
+    font-size: 25px;
+    color: azure;
+    background: hsl(0 0% 0% / 0.0);
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    text-align: center;
+}
+.Body form input:focus{
+    outline: 0px solid orange;
+    border-color: rgb(216, 255, 254);
+}
+.username{
+    position: relative;
+    left: 20%;
+    width: 60%;
+}
+.container{
+    display: flex;
+    margin-top: 2rem;
+}
+.password{
+    width: 100%;
+    margin-left: 13%;
+}
+.password input{
+    width: 80%;
+    margin-bottom: 0.5rem;
+}
+.eye{
+    height: 20px;
+    margin-top: 2rem;
+    margin-right: 3.2rem;
+    transform: translate(-400%, -20%);
+}
+.reset_password a{
+    text-decoration: none;
+    color: rgb(216, 255, 254);
+    font-size: 20px;
+    margin-right: 34%;
+    margin-bottom: 10rem;
+}
+.reset_password{
+    margin-top: 1.5rem;
+}
+.reset_password a:hover{
+    color: white;
+}
+.Body form{
+    height: 100%;
+}
+.container_button{
+    height: 40%;
+    margin-top: 10rem;
+}
+.container_button button{
+    font-size: 25px;
+    color: white;
+}
+.Login{
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    font-size: 25px;
+    color: black;
+    background-color: rgb(216, 255, 254);
+    border-radius: 20px;
+    border-width: 0;
+    width: 60%;
+    margin-left: 20%;
+    height: 40px;
+}
+.Login:hover{
+    cursor: pointer;
+    background-color: rgb(0, 161, 156);
+}
+.or{
+    margin-top: 0rem;
+    font-size: 25px;
+}
+.gmail,
+.facebook,
+.instagram{
+    width: 50px;
+    height: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 40px;
+    border-width: 0;
+}
+.gmail{
+    background-image: url(icone/gmail.svg);
+}
+.facebook{
+    background-image: url(icone/facebook.svg);  
+}
+.instagram{
+    background-image: url(icone/instagram.svg);
+}
+.gmail:hover,
+.instagram:hover,
+.facebook:hover{
+    transform: scale(1.1);
+}
+.button_icon{
+    margin-bottom: 2rem;
+}
+.button_icon button:hover{
+    cursor: pointer;
+}
+.register{
+    display: flex;
+    width: 55%;
+    margin-left: 25%;
+}
+.register-text{
+    margin-right: 1rem;
+}
+.Register-link{
+    margin-top: 1rem;
+    text-decoration: none;
+    color: white;
+}
+.Register-link:hover{
+    color:rgb(216, 255, 254) ;
+}
+#error1{
+    color: rgb(205, 29, 29);
+    background-color: rgb(148, 22, 22, 0.2);
+    width: 60%;
+    margin-left: 20%;
+    font-size: 20px;
+    margin-bottom: -6rem;
+    margin-top: 6rem;
+}
+#error{
+    color: rgb(205, 29, 29);
+    background-color: rgb(148, 22, 22, 0.2);
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 0rem;
+    margin-bottom: -2rem;
+
+}
+.error_field{
+    border-color: rgb(148, 22, 22) ;
+}
+.password #error{
+    color: rgb(148, 22, 22);
+    font-size: 15px;
+    margin-top: -0.5rem;
+    width: 80%;
+    margin-left: 10%;
+}
+
+
+@media (max-width: 600px) {
+    .Body{
+        width: 300px;
+        height: 600px;
+    }
+    .Body header h1{
+        font-size: 20px;
+    }
+    .Body form{
+        margin-top: 6rem;
+
+    }
+    .Body form input{
+        font-size: 15px;
+    }
+    .reset_password a{
+        font-size: 15px;
+        margin-left: 2rem;
+    }
+    .container .eye{
+        margin-right: 0rem;
+        margin-left: 1rem;
+    }
+    #myField{
+        margin-bottom: -0.5rem;
+    }
+    .Login{
+        font-size: 20px;
+        width: 140px;
+        height: 30px;
+        margin-left: 5rem;
+        margin-top: 1.5rem;
+    }
+    .or{
+        font-size: 15px;
+        margin-top: -0.5rem;
+    }
+    .button_icon button {
+        height: 40px;
+        width: 40px;
+    }
+    .register-text{
+        font-size: 12px;
+        margin-top: 1.1rem;
+        margin-right: 0.5rem;
+    }
+    .register{
+        width: 100%;
+        margin-left: 2.5rem;
+    }
+    .Register-link{
+        font-size: 15px;
+    }
+}
+
+
+
+
+
+

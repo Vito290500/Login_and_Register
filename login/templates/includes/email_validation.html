@@ -1,0 +1,44 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify Email</title>
+    <link rel="stylesheet" href="{% static 'includes/email.css' %}">
+</head>
+<body>
+    <div class="header"> 
+        <h1 class="title">THANKS FOR REGISTRATION!</h1>   
+    </div>   
+
+    <div class="Background">
+    </div>  
+
+    <div class="Body">
+        
+        <form action="{% url 'email-validation-check' %}" method="POST">
+            {% csrf_token %}
+            <h2>Please check your Email!</h2>
+            <p>Insert the OTP code received in your email</p>
+            <p>to confirm your email.</p>  
+
+            <div class="otp">
+                <h3>OTP</h3>
+                <input class="{% if error_hadling and error_hadling.error or error_hadling.empty %} error_field {% endif %}" type="text" name="otp">
+            </div>
+            <div class="error">
+            {% if error_hadling and error_hadling.empty %}
+                <p id="error">{{ error_hadling.empty }}</p>
+            {% endif %}
+            
+            {% if error_hadling and error_hadling.error %}
+                <p id="error">{{ error_hadling.error }}</p>
+            {% endif %}
+            </div>
+            <button class="Confirm">Confirm</button>
+        </form>    
+    </div>
+</body>
+</html>

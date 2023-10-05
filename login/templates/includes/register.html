@@ -1,0 +1,77 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link rel="stylesheet" href="{% static 'includes/register.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <script type="text/javascript"src="{% static 'includes/js/showpassword.js' %}"></script>
+</head>
+<body>
+    <div class="Background">
+    </div>
+    <div class="Body">
+        <header>
+            <h1>REGISTER</h1>
+        </header>
+        <form action="{% url 'register-page' %}" method="POST">
+            {% csrf_token %}
+            <input class="username {% if error_handling and error_handling.username_error %}error{% endif %}" type="text" name="username" id="" placeholder="Username">
+            
+            {% if error_handling and error_handling.username_error %}
+                <p class="error">{{ error_handling.username_error }}</p>
+            {% endif %}
+
+            <div class="Name_user">
+                <input class="username" type="text" name="first_name" id="" placeholder="First Name">
+                <input class="username" type="text" name="last_name" id="" placeholder="Last Name">
+            </div>
+        
+            <input class="username {% if error_handling and error_handling.error_email %}error{% endif %}" type="text" name="email" id="email" placeholder="Email">
+    
+            {% if error_handling and error_handling.error_email %}
+                <p class="error">{{ error_handling.error_email }}</p>
+            {% endif %}
+        
+            <div class="container">
+                <div class="password">
+                    <input class="{% if error_handling and error_handling.error_password %}error{% endif %}" id="password" type="password" name="password" placeholder="Password" />
+                </div>
+                <div class="eye">
+                    <i class="bi bi-eye-slash" id="togglePassword"></i>
+                </div>
+            </div>
+        
+            <div class="container2">
+                <div class="password">
+                    <input class="{% if error_handling and error_handling.username_error %}error{% endif %}" id="password" type="password" name="confirmpassword" placeholder="Confirm Password" />
+                </div>
+                <div class="eye">
+                    <i class="bi bi-eye-slash" id="togglePassword"></i>
+                </div>
+            </div>
+            
+            {% if error_handling and error_handling.error_password %}
+                <p class="error">{{ error_handling.error_password }}</p>
+            {% endif %}
+
+            {% if error_handling and error_handling.field_error %}
+                <p class="error">{{ error_handling.field_error }}</p>
+            {% endif %}
+
+            <button class="Register" type="submit">Register</button>
+            <p class="or">or with</p>
+            <div class="button_icon">
+                <button class="gmail"></button>
+                <button class="facebook"></button>
+                <button class="instagram"></button>
+            </div>
+            <a href="{% url 'main-page' %}" class="Back_to_Login">Back to Login</a>
+        </form>
+    </div>
+</body>
+    
+</html>

@@ -1,0 +1,126 @@
+body, html {
+    height: 93%;
+    background-color: black;
+}
+.header{
+    background: rgb(11, 11, 32);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title{
+    color: rgb(216, 255, 254);
+}
+.Background{
+    width: 100%;
+    height: 100%;
+    background-image: url('https://img.freepik.com/photos-premium/scene-foret-fantastique-foret-rougeoyante-lumiere-bleue-foret-lucioles-dans-ciel_737376-1487.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    margin-top: 9rem;
+}
+.Body{
+    color: rgb(216, 255, 254);
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 550px;
+    height: 700px;
+    text-align: center;   
+    background: rgb(26, 26, 26);
+    background: hsl(0 0% 0% / 0.5);
+    backdrop-filter: blur(1rem);
+    border-radius: 20px;
+}
+.Body form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 6rem;
+    height: 100%;
+}
+.Body form h2{
+    font-size: 30px;
+    margin-bottom: 2rem;
+}
+.Body form p{
+    font-size: 20px;
+    color: white;
+}
+.otp{
+    margin-top: 2rem;
+}
+.otp h3{
+    color: white;
+}
+.otp input{
+    width: 150px;
+    height: 50px;
+    font-size: 30px;
+    text-align: center;
+}
+.Confirm{
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+    font-size: 25px;
+    color: black;
+    background-color: rgb(216, 255, 254);
+    border-radius: 20px;
+    border-width: 0;
+    width: 60%;
+    margin-left: 20%;
+    height: 40px;
+}
+.Confirm:hover{
+    cursor: pointer;
+    background-color: rgb(0, 161, 156);
+}
+#error{
+    color: rgb(148, 22, 22);
+    font-size: 20px;
+    margin-bottom: -2rem;
+}
+.error_field{
+    background: rgb(255, 139, 139);
+    border-color: rgb(236, 90, 90) ;
+}
+
+@media (max-width: 600px) {
+    .Body{
+        width: 300px;
+        height: 500px;
+    }
+    .header h1{
+        font-size: 20px;
+        width: 100%;
+        margin-left: 2rem;
+    }
+    .Body{
+        margin-top: 5rem;
+    }
+    .Body form h2{
+        font-size: 20px;
+        margin-top: -3rem;
+    }
+    .Body form p{
+        font-size: 15px;
+    }
+    .otp{
+        margin-top: 1rem;
+    }
+    .Confirm{
+        margin-top: 5rem;
+        font-size: 15px;
+        width: 140px;
+        margin-left: 5rem
+    }
+}

@@ -1,0 +1,26 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ops! something wrong.</title>
+    <link rel="stylesheet" href="{% static 'includes/unsuccessfull.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+</head>
+<body>
+
+    <div class="Background">
+    </div>
+    <div class="Body">
+        <button class="image"></button>
+        <h1>Ops, Something went wrong.</h1>
+        <h3>Please back to register and try again.</h3>
+        <p>Be sure to properly compilet all the input field.</p>
+        <div class="back">
+            <a href="{% url 'register-page' %}" class="Back">Back to register</a>
+        </div>
+    </div>
+</body>
+</html>

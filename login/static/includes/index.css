@@ -1,4 +1,4 @@
-body, html {
+body, html{
     height: 100%;
     background-color: black;
 }
@@ -21,7 +21,7 @@ body, html {
     transform: translate(-50%, -50%);
     width: 550px;
     height: 800px;
-    text-align: center;   
+    text-align: center;
     background: rgb(26, 26, 26);
     background: hsl(0 0% 0% / 0.5);
     backdrop-filter: blur(1rem);
@@ -34,6 +34,17 @@ body, html {
     display: flex;
     flex-direction: column;
     margin-top: 8rem;
+}
+.Body form input{
+    margin-top: 1rem;
+    height: 40px;
+    font-size: 25px;
+    color: azure;
+    background: hsl(0 0% 0% / 0.0);
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    text-align: center;
 }
 .Body form input{
     margin-top: 1rem;
@@ -71,7 +82,7 @@ body, html {
     height: 20px;
     margin-top: 2rem;
     margin-right: 3.2rem;
-    transform: translate(-400%, -20%);
+    transform: translate(-40%, -20%);
 }
 .reset_password a{
     text-decoration: none;
@@ -132,7 +143,7 @@ body, html {
     background-image: url(icone/gmail.svg);
 }
 .facebook{
-    background-image: url(icone/facebook.svg);  
+    background-image: url(icone/facebook.svg);
 }
 .instagram{
     background-image: url(icone/instagram.svg);
@@ -141,6 +152,9 @@ body, html {
 .instagram:hover,
 .facebook:hover{
     transform: scale(1.1);
+}
+.button_icon{
+    margin-bottom: 2rem;
 }
 .button_icon{
     margin-bottom: 2rem;
@@ -162,7 +176,7 @@ body, html {
     color: white;
 }
 .Register-link:hover{
-    color:rgb(216, 255, 254) ;
+    color: rgb(216, 255, 254);
 }
 #error1{
     color: rgb(205, 29, 29);
@@ -243,11 +257,15 @@ body, html {
     .register{
         width: 100%;
         margin-left: 2.5rem;
+        margin-top: -1rem;
     }
     .Register-link{
         font-size: 15px;
     }
 }
+
+
+
 
 
 

@@ -5,7 +5,7 @@ import smtplib
 from django.urls import reverse
 
 user_email = "vitodivenosawork@gmail.com"
-token = "sgmuqxaympedmqwa"
+token = "ndko nzzy vobb zndt"
 
 from .models import UserData, EmailValidation
 
@@ -144,6 +144,8 @@ class RegisterPageView(View):
                                              otp=otp)
 
         validation_status.save()
+
+        print(submitted['email'])
 
         connection = smtplib.SMTP("smtp.gmail.com")
         connection.starttls()

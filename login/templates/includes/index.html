@@ -6,7 +6,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MainPage</title>
-    <link rel="stylesheet" href="{% static 'includes/index.css' %}">
+    <link rel="stylesheet" 
+    href="{% static 'includes/index.css' %}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
@@ -23,7 +24,7 @@
         {% endif %}
         <form action="{% url 'main-page' %}" method="POST">
             {% csrf_token %}
-            <input class="username {% if error_username %}error_field {% endif %}" type="text" name="username" id="myField" placeholder="Username"> 
+            <input class="username {% if error_username %}error_field {% endif %}" type="text"name="username" id="myField" placeholder="Username"> 
 
             {% if error_username %}
                 <p id="error">{{ error_username }}</p>
@@ -31,7 +32,7 @@
 
             <div class="container">
                 <div class="password">
-                    <input class="{% if error_pass %}error_field {% endif %}" id="password" type="password" name="password" placeholder="Password" />
+                    <input class="{% if error_pass %}error_field {% endif %}"id="password" type="password" name="password" placeholder="Password" />
                     
                     {% if error_pass %}
                         <p id="error">{{ error_pass }}</p>
@@ -39,29 +40,33 @@
 
                 </div>
                 <div class="eye">
-                    <i class="bi bi-eye-slash" id="togglePassword"></i>
+                    <i class="bi bi-eye-slash"
+                    id="togglePassword"></i>
                 </div>
             </div>
+            
             <div class="reset_password">
-                <a href="{% url 'capture_value' %}" id="myLink" name>forgot password?</a>
+                <a href="{% url 'capture_value' %}" id="myLink" name>
+                    forgot password?
+                </a>
             </div>
-            
+
             <button class="Login" type="submit">Login</button>
-            
+
             <p class="or">or with</p>
             <div class="button_icon">
                 <button class="gmail"></button>
-                <button class="facebook" ></button>
+                <button class="facebook"></button>
                 <button class="instagram"></button>
             </div>
             <div class="register">
-                <p class="register-text">You don't have one account? </p>
+                <p class="register-text">You don't have an account?</p>
                 <a href="{% url 'register-page' %}" class="Register-link">Register</a>
             </div>
+
         </form>
-        
     </div>
 </body>
-    <script type="text/javascript"src="{% static 'includes/js/showpassword.js' %}"></script>
-    <script type="text/javascript"src="{% static 'includes/js/capturefield.js' %}"></script>
+<script type="text/javascript"src="{% static 'includes/js/showpassword.js' %}"></script>
+<script type="text/javascript"src="{% static 'includes/js/capturefield.js' %}"></script>
 </html>

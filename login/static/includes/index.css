@@ -228,8 +228,8 @@ body, html{
         margin-left: 2rem;
     }
     .container .eye{
-        margin-right: 0rem;
-        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-left: 0rem;
     }
     #myField{
         margin-bottom: -0.5rem;
